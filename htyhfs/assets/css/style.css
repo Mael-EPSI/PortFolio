@@ -1,0 +1,140 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #120024;
+    color: #D1D1D1;
+}
+
+/*========================*/
+        /* Title */
+/*========================*/
+
+.title{
+    flex-direction: column;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title .pres{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.title .images{
+    display: flex;
+    justify-content: space-around;
+}
+
+.title .images img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*========================*/
+        /* About */
+/*========================*/
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.about h2{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-decoration: underline;
+}
+
+.about p{
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.about .description{
+    width: 62%;
+    padding: 2em;
+    text-align: justify;
+    border: 4.5px solid #32203E;
+    border-radius: 10px;
+}
+
+.about .description a{
+    justify-content: center;
+    display: flex;  
+    align-items: center;
+    color: #D1D1D1;
+    text-decoration: underline;
+}
+
+/*========================*/
+        /*Skills*
+/*========================*/
+.skills {
+    text-align: center;
+}
+
+/* Initialement, on cache le triangle */
+.triangle-container {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.triangle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row i {
+    font-size: 30px;
+    margin: 5px;
+}
+
+/* Espacement pour créer un triangle */
+.triangle .row:nth-child(1) i {
+    margin: 0;
+}
+
+.triangle .row:nth-child(2) i {
+    margin: 0 30px;
+}
+
+.triangle .row:nth-child(3) i {
+    margin: 0 45px;
+}
+
+.triangle .row:nth-child(4) i {
+    margin: 0 55px;
+}
+
+#toggleButton {
+    margin-top: 1.2em;
+    color: #D1D1D1;
+    text-decoration: underline;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    border: 3px solid #32203E;
+    border-radius: 5px;
+}

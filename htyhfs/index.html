@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+
+</head>
+<body>
+    <div class="title">
+        <h1>Portfolio Ruchaud Maël</h1>
+        <div class="subtitle">
+            <div class="pres">
+                <p>Développeur Web</p>
+            </div>
+            <div class="images">
+                <img src="#" alt="Logo Ruchaud Maël">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section class="about">
+            <h2>Presentation</h2>
+            <div class="underline"></div>
+            <div class="description">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, temporibus obcaecati, labore exercitationem recusandae suscipit, 
+                    omnis eaque dolorem neque quae perspiciatis! Molestiae cumque voluptatem quibusdam aperiam dignissimos rerum enim labore.
+                    Velit sunt a molestias praesentium tempora commodi laboriosam, magni excepturi culpa ipsa pariatur, odio obcaecati tempore expedita 
+                    minima! Animi dolores maiores laboriosam nisi cupiditate veritatis quis, quos rerum consectetur beatae.
+                </p>
+                <a href="#">Télécharger mon CV</a>
+            </div>
+        </section>
+
+        <!-- Section competence -->
+        <section>
+            <h2>Competence</h2>
+            <div class="underline"></div>
+            <div class="skills">
+                <!-- Logo des different lnguage et application -->
+                <div class="triangle">
+                    <div class="row">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="row">
+                        <i class="fab fa-css3"></i>
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="row">
+                        <i class="fab fa-php"></i>
+                        <i class="fab fa-react"></i>
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="row">
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-figma"></i>
+                        <i class="fas fa-database"></i>   
+                        <i class="fab fa-cuttlefish"></i>
+                    </div>
+                </div>
+                <button id="toggleButton">Afficher Triangle</button>
+
+
+                
+                <div id="triangleContainer" class="triangle-container">
+                    <div class="triangle">
+                        <div class="row">
+                            <p>Html</p> 
+                        </div>
+                        <div class="row">
+                            <p>Css</p> 
+                            <p>JavaScript</p> 
+                        </div>
+                        <div class="row">
+                            <p>php</p> 
+                            <p>React</p>  
+                            <p>Python</p>
+                        </div>
+                        <div class="row">
+                            <p>Github</p>
+                            <p>Figma</p>  
+                            <p>Html</p>  
+                            <p>Css</p> 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section Project -->
+        <section>
+            <h2>Projet</h2>
+            <div class="underline"></div>
+
+            <div class="projects">
+                <div class="box">
+                    <img src="image1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#">Plus d'information</a>
+                </div>
+                <div class="box">
+                    <img src="image2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#">Plus d'information</a>
+                </div>
+                <div class="box">
+                    <img src="#" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#">Plus d'information</a>
+                </div>
+                <div class="box">
+                    <img src="#" alt="Project 4">
+                    <h3>Project 4</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#">Plus d'information</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section Service  -->
+        <Section>
+            <h2>Services</h2>
+            <div class="underline"></div>
+
+            <div class="services">
+                <!-- Description des services -->
+                <div class="service">
+                    <img src="#" alt="Service 1">
+                    <h3>Service 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+        </Section>
+
+        <!-- Section Contact -->
+        <section>
+            <h2>Contact</h2>
+            <div class="underline"></div>
+            <div class="contact">
+
+                <!-- Formulaire de contact -->
+                <form action="#">
+                    <input name="nom" type="text" placeholder="Votre nom">
+                    <input name="email" type="email" placeholder="Votre email">
+                    <input name="project_name" type="text" placeholder="Votre Projet">
+                    <textarea name="message" placeholder="Votre message"></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </section>
+    </div>
+    <script>
+        // Sélectionner le bouton et le conteneur du triangle
+        const toggleButton = document.getElementById("toggleButton");
+        const triangleContainer = document.getElementById("triangleContainer");
+
+        // Ajouter un événement de clic au bouton pour afficher/masquer le triangle
+        toggleButton.addEventListener("click", function() {
+            // Vérifier si le triangle est caché ou non
+            if (triangleContainer.style.display === "none" || triangleContainer.style.display === "") {
+                triangleContainer.style.display = "block";  // Afficher le triangle
+                toggleButton.textContent = "Masquer Triangle";  // Changer le texte du bouton
+            } else {
+                triangleContainer.style.display = "none";  // Cacher le triangle
+                toggleButton.textContent = "Afficher Triangle";  // Remettre le texte original
+            }
+        });
+    </script>
+</body>
+</html>
