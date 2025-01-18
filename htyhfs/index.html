@@ -65,8 +65,6 @@
                 </div>
                 <button id="toggleButton">Afficher Triangle</button>
 
-
-                
                 <div id="triangleContainer" class="triangle-container">
                     <div class="triangle">
                         <div class="row">
@@ -132,32 +130,58 @@
             <div class="underline"></div>
 
             <div class="services">
-                <!-- Description des services -->
-                <div class="service">
+                <div class="services">
                     <img src="#" alt="Service 1">
                     <h3>Service 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <div class="option">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                    </div>
+                </div>
+
+                <div class="services">
+                    <img src="#" alt="Service 2">
+                    <h3>Service 2</h3>
+                    <div class="option">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
                 </div>
             </div>
         </Section>
 
         <!-- Section Contact -->
-        <section>
+        <section class="contact_section">
             <h2>Contact</h2>
             <div class="underline"></div>
             <div class="contact">
-
                 <!-- Formulaire de contact -->
-                <form action="#">
-                    <input name="nom" type="text" placeholder="Votre nom">
-                    <input name="email" type="email" placeholder="Votre email">
-                    <input name="project_name" type="text" placeholder="Votre Projet">
+                <form class="form_contact" action="contact.php" method="POST">
+                    <div class="name-fields">
+                        <input name="nom" type="text" placeholder="Votre nom">
+                        <input name="prenom" type="text" placeholder="Votre prénom">
+                    </div>
+                    <div class="name-fields">
+                        <input name="email" type="email" placeholder="Votre email">
+                        <input name="project_name" type="text" placeholder="Votre Projet">
+                    </div>
                     <textarea name="message" placeholder="Votre message"></textarea>
                     <input type="submit" value="Envoyer">
                 </form>
             </div>
         </section>
+        
     </div>
+
     <script>
         // Sélectionner le bouton et le conteneur du triangle
         const toggleButton = document.getElementById("toggleButton");
