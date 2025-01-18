@@ -138,3 +138,100 @@ body{
     border: 3px solid #32203E;
     border-radius: 5px;
 }
+
+/*=====================*/
+        /* Contact */
+/*=====================*/
+
+/* Section de contact */
+.contact_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.contact_section h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-decoration: underline;
+
+}
+
+.contact_section .contact {
+    width: 62%;
+    padding: 20px;
+    border: 3.5px solid #32203E;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact_section .contact .form_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Champs du formulaire */
+.contact_section .contact .form_contact input[type="text"], 
+.contact_section .contact .form_contact input[type="email"], 
+.contact_section .contact .form_contact textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 1em;
+    border: 2px solid #32203E;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+
+/* Effet au focus */
+.contact_section .contact .form_contact .name-fields input[type="text"]:focus, 
+.contact_section .contact .form_contact input[type="email"]:focus, 
+.contact_section .contact .form_contact textarea:focus {
+    border-color: #5D406B;
+}
+
+/* Champs nom et prénom */
+.contact_section .contact .form_contact .name-fields {
+    display: flex;
+    gap: 1em;
+    width: 90%;
+    margin-bottom: 1em;
+}
+
+.contact_section .contact .form_contact .name-fields input[type="text"], input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #32203E;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    background-color: #120024;
+    transition: border-color 0.3s ease;
+}
+
+/* Zone de texte (message) */
+.contact_section .contact .form_contact textarea {
+    resize: vertical;
+    height: 100px;
+    background-color: #120024;
+}
+
+/* Bouton envoyer */
+.contact_section .contact .form_contact input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #32203E;
+    color: #D1D1D1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact_section .contact .form_contact input[type="submit"]:hover {
+    background-color: #5D406B;
+}
