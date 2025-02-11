@@ -1,0 +1,40 @@
+Partie 1 : Protection de l'identité numérique
+
+1.
+Surveillance des noms de domaine via Google Alerts.
+Achat de variations du domaine officiel pour limiter l’usurpation. (.net, .fr, .com)
+Authentification visuelle avec certificats SSL et HTTPS, signalé les faux sites
+
+2. .
+Utilisation de signatures numériques pour certifier les messages.
+Formation des employés et clients contre le phishing.
+
+3. 
+Désactivation immédiate des comptes à leur départ.
+Audit régulier des comptes pour supprimer les accès inutiles.
+
+4.
+Outils de veille réputationnelle comme Brandwatch.
+Analyse des réseaux sociaux pour repérer les comptes frauduleux.
+Vérification et surtout bloquer les acces de l'ancien compte professionnel. 
+Tous en prevenue les potentiels clients de ne plus ce fié a cet e-mail.
+
+
+Partie 2 : Déploiement des preuves électroniques
+
+5. 
+Signature numérique avec Adobe Sign.
+Chiffrement des e-mails via S/MIME ou PGP.
+
+6. 
+Horodatage électronique avec Digistamp.
+Blockchain pour enregistrer un hash du document.
+
+7. 
+SIEM (Splunk, IBM QRadar, Microsoft Sentinel) pour analyser les événements de sécurité.
+EDR (CrowdStrike, SentinelOne) pour surveiller les terminaux.
+
+8.
+Assurer la non-répudiation en prouvant l’existence du document.
+Validité juridique pour l’admissibilité en justice.
+Protection contre les modifications en détectant toute altération postérieure.
